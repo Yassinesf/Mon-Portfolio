@@ -42,10 +42,10 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCards
-              imgPath="/Projects/cube.png"
+              imgPath="/Projects/**"
               isBlog={false}
-              title="Cube"
-              description="Our project is an online education platform that aims to make learning accessible to all. With interactive courses, high-quality educational materials, and advanced collaboration tools, our platform provides an immersive and engaging learning experience. Students can choose from a variety of courses in different fields, interact with their peers and instructors, and achieve their full potential, regardless of their constraints."
+              title="Projet 03"
+              description=""
               ghLink=""
             />
           </Col>
