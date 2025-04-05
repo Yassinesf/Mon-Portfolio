@@ -52,10 +52,8 @@ Ce projet est un portfolio personnel développé avec Next.js. Il a été réali
 ## Technologies utilisées
 
 - Next.js
-- React
 - Redux Toolkit
 - React-Bootstrap
-- CSS3
 - Google Fonts
 
 ---
@@ -95,7 +93,7 @@ Ce projet est un portfolio personnel développé avec Next.js. Il a été réali
 1. Cloner le projet :
 
 ```bash
-git clone https://github.com/ton-utilisateur/Mon-Portfolio.git
+git clone https://github.com/Yassinesf/Mon-Portfolio.git
 cd Mon-Portfolio
 ```
 
