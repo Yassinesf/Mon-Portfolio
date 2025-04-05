@@ -2,7 +2,7 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
 import { DiJavascript1, DiJava } from "react-icons/di";
-import { SiKotlin, SiCplusplus, SiPython, SiMysql } from "react-icons/si";
+import { SiKotlin, SiCplusplus, SiPython, SiMysql, SiCsharp } from "react-icons/si";
 
 const languages = [
   { icon: <DiJavascript1 />, label: "JavaScript" },
@@ -11,6 +11,7 @@ const languages = [
   { icon: <DiJava />, label: "Java" },
   { icon: <SiPython />, label: "Python" },
   { icon: <SiMysql />, label: "SQL" },
+  { icon: <SiCsharp />, label: "C#" },
 ];
 
 function Techstack() {
