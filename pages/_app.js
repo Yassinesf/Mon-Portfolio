@@ -1,6 +1,5 @@
 import Footer from "@/components/Footer";
 import NavBar from "@/components/Navbar";
-import Pre from "@/components/Pre";
 import ScrollToTop from "@/components/ScrollToTop";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@/styles/globals.css";
@@ -9,30 +8,27 @@ import ReduxProvider from "@/components/redux-provider";
 import Head from "next/head";
 
 export default function App({ Component, pageProps }) {
-  const [load, upadateLoad] = useState(true);
+  const [load, setLoad] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      upadateLoad(false);
-    }, 1200);
-
+      setLoad(false);
+    }, 1000);
     return () => clearTimeout(timer);
   }, []);
+
   return (
-    <>
+    <ReduxProvider>
       <Head>
         <title>YASSINE SF | Portfolio</title>
         <link rel="icon" href="/favicon.png" sizes="any" />
       </Head>
-      <Pre load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <NavBar />
         <ScrollToTop />
-        <ReduxProvider>
-          <Component {...pageProps} />
-        </ReduxProvider>
+        <Component {...pageProps} />
         <Footer />
       </div>
-    </>
+    </ReduxProvider>
   );
 }
