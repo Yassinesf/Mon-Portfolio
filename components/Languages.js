@@ -1,4 +1,3 @@
-// ✅ FILE: components/Techstack.js
 import React from "react";
 import { Row, Col } from "react-bootstrap";
 import { DiJavascript1, DiJava } from "react-icons/di";
@@ -14,7 +13,7 @@ const languages = [
   { icon: <SiCsharp />, label: "C#" },
 ];
 
-function Techstack() {
+function Languages() {
   return (
     <Row className="toolstack-row">
       {languages.map((lang, idx) => (
@@ -27,4 +26,4 @@ function Techstack() {
   );
 }
 
-export default Techstack;
+export default Languages;

@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { login } from "@/features/userSlice";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 export default function Login() {
   const [form, setForm] = useState({ username: "", password: "" });
@@ -9,7 +10,9 @@ export default function Login() {
 
   const dispatch = useDispatch();
   const router = useRouter();
+
   const users = useSelector((state) => state.user.users);
+  const currentUser = useSelector((state) => state.user.currentUser);
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -31,11 +34,16 @@ export default function Login() {
 
     if (userFound) {
       dispatch(login(form));
-      router.push("/about"); // redirection vers la page d'accueil
     } else {
       setError("Nom d'utilisateur ou mot de passe incorrect.");
     }
   };
+
+  useEffect(() => {
+    if (currentUser) {
+      router.push("/protected/about");
+    }
+  }, [currentUser]);
 
   return (
     <div className="auth-container">
@@ -62,6 +70,12 @@ export default function Login() {
           Se connecter
         </button>
       </form>
+      <p style={{ marginTop: "25px", textAlign: "center" }}>
+        Vous n'avez pas de compte ?{" "}
+        <Link href="/signup" style={{ color: "#ff0000", fontWeight: "bold" }}>
+          Créez un compte
+        </Link>
+      </p>
     </div>
   );
 }

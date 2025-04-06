@@ -1,8 +1,9 @@
-// features/userSlice.js
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  users: [], // Liste des utilisateurs enregistrés
+  users: [
+    { username: "admin", password: "1234" },
+  ],
   currentUser: null,
 };
 
@@ -12,16 +13,14 @@ const userSlice = createSlice({
   reducers: {
     register: (state, action) => {
       state.users.push(action.payload);
+      state.currentUser = action.payload;
     },
     login: (state, action) => {
+      const { username, password } = action.payload;
       const user = state.users.find(
-        (u) =>
-          u.username === action.payload.username &&
-          u.password === action.payload.password
+        (u) => u.username === username && u.password === password
       );
-      if (user) {
-        state.currentUser = user;
-      }
+      state.currentUser = user || null;
     },
     logout: (state) => {
       state.currentUser = null;
@@ -30,5 +29,4 @@ const userSlice = createSlice({
 });
 
 export const { register, login, logout } = userSlice.actions;
-
 export default userSlice.reducer;

@@ -18,7 +18,7 @@ const tools = [
   { icon: <SiPostman />, label: "Postman" },
 ];
 
-function Toolstack() {
+function Outils() {
   return (
     <Row className="toolstack-row">
       {tools.map((tool, idx) => (
@@ -31,4 +31,4 @@ function Toolstack() {
   );
 }
 
-export default Toolstack;
+export default Outils;

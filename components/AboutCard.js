@@ -4,7 +4,6 @@ import Card from "react-bootstrap/Card";
 function AboutCard() {
   return (
     <div className="about-custom-layout">
-      {/* Image en haut */}
       <div className="about-image-container">
         <img
           src="/photo.png"
@@ -13,9 +12,7 @@ function AboutCard() {
         />
       </div>
 
-      {/* BIO + COMPETENCES */}
       <div className="about-bio-comp">
-        {/* Biographie à gauche */}
         <div className="bio-section">
           <h1 className="project-heading">BIOGRAPHIE :</h1>
           <p style={{ textAlign: "justify" }}>
@@ -37,7 +34,6 @@ function AboutCard() {
           </p>
         </div>
 
-        {/* Compétences à droite */}
         <div className="skills-section">
           <h2 className="project-heading">COMPÉTENCES :</h2>
           <ul style={{ textAlign: "left", paddingLeft: "1rem" }}>

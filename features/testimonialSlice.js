@@ -1,30 +1,25 @@
-import testimonials from "@/data/testimonialsArr";
+// features/testimonialSlice.js
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  testimonials,
+  list: [], // c’est ça que les pages lisent
 };
 
-export const testimonialSlice = createSlice({
-  name: "testimonial",
+const testimonialSlice = createSlice({
+  name: "testimonials",
   initialState,
   reducers: {
     addTestimonial: (state, action) => {
-      state.testimonials.push(action.payload);
-    },
-    deleteTestimonial: (state, action) => {
-      state.testimonials = state.testimonials.filter(
-        (testimonial) => testimonial.id !== action.payload
-      );
+      state.list.push(action.payload);
     },
     editTestimonial: (state, action) => {
-      state.testimonials = state.testimonials.map((testimonial) =>
-        testimonial.id === action.payload.id ? action.payload : testimonial
-      );
+      const { index, name, comment } = action.payload;
+      if (state.list[index]) {
+        state.list[index] = { name, comment };
+      }
     },
   },
 });
-export const { addTestimonial, deleteTestimonial, editTestimonial } =
-  testimonialSlice.actions;
 
+export const { addTestimonial, editTestimonial } = testimonialSlice.actions;
 export default testimonialSlice.reducer;

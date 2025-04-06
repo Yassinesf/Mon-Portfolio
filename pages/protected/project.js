@@ -42,11 +42,11 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCards
-              imgPath="/Projects/**"
+              imgPath="/Projects/Converter.png"
               isBlog={false}
-              title="Projet 03"
-              description=""
-              ghLink=""
+              title="Convertisseur d'unité"
+              description="UnitsConvertor est une application graphique développée en WPF permettant de convertir facilement les unités de mesure les plus courantes. L'interface conviviale offre un accès rapide aux quatre grandes catégories de conversions, Technologies utilisées : C# / WPF pour l’interface utilisateur XAML pour la mise en page graphique MVVM  pour la séparation logique"
+              ghLink="https://github.com/Yassinesf/Units-convertor.git"
             />
           </Col>
         </Row>

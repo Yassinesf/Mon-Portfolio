@@ -842,7 +842,6 @@ button:focus {
   box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
 }
 
-/* 🔲 Texte noir globalement sur toutes les pages */
 
 body,
 html,
@@ -1127,7 +1126,7 @@ small {
 
 .about-bio-comp {
   display: grid;
-  grid-template-columns: 3fr 3px 3fr; /* Bio - Trait - Compétences */
+  grid-template-columns: 3fr 3px 3fr; 
   gap: 60px;
   width: 200%;
   padding-top: 40px;
@@ -1176,6 +1175,15 @@ small {
   }
 }
 
+
+.testimonial-card {
+  background-color: white;
+  border: 2px solid #ff0000;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  height: 100%;
+}
 
 
 
