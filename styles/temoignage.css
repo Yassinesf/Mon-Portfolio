@@ -33,11 +33,18 @@
   background-color: #b9b9b9;
 }
 
-
 .testimonial-text {
   font-style: italic;
   color: #333;
   font-size: 15px;
+  word-wrap: break-word;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  max-width: 100%;
+  text-align: center;
+  max-height: 100px;
+  overflow-y: auto;
 }
 
 .testimonial-user {
@@ -73,7 +80,7 @@ img.tm-people {
 .btn-modifier {
   background-color: #ff0000;
   border: none;
-  color: white;
+  color: rgb(0, 0, 0);
   font-weight: bold;
   padding: 10px 18px;
   border-radius: 10px;
@@ -86,8 +93,20 @@ img.tm-people {
 }
 
 .btn-modifier:hover {
-  background-color: #cc0000;
+  background-color: #000000;
   transform: translateY(-2px);
+  color: rgb(255, 0, 0);
 }
 
+.auth-error {
+  color: red !important;
+  font-size: 1rem;
+  margin-top: -10px;
+}
+
+.auth-success {
+  color: green !important;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
 

@@ -1,8 +1,6 @@
-// features/testimonialSlice.js
 import { createSlice } from "@reduxjs/toolkit";
-
 const initialState = {
-  list: [], // c’est ça que les pages lisent
+  list: [],
 };
 
 const testimonialSlice = createSlice({
@@ -14,8 +12,13 @@ const testimonialSlice = createSlice({
     },
     editTestimonial: (state, action) => {
       const { index, name, comment } = action.payload;
-      if (state.list[index]) {
-        state.list[index] = { name, comment };
+
+      if (typeof index === "number" && state.list[index]) {
+        state.list[index] = {
+          ...state.list[index],
+          name,
+          comment,
+        };
       }
     },
   },

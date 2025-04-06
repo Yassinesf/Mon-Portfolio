@@ -86,12 +86,6 @@ function NavBar() {
                   <FaQuoteRight style={{ fontSize: "1.4em", marginBottom: "2px" }} /> Témoignages
                 </Link>
               </Nav.Item>
-
-              <Nav.Item>
-                <Link href="/protected/manage" onClick={() => updateExpanded(false)}>
-                  <FaPlusCircle style={{ fontSize: "1.4em", marginBottom: "2px" }} /> Ajouter un témoignage
-                </Link>
-              </Nav.Item>
             </Nav>
           </Navbar.Collapse>
 

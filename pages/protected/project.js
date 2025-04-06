@@ -1,17 +1,10 @@
-import Particle from "@/components/Particle";
 import ProjectCards from "@/components/ProjectCards";
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-//import ProjectCard from "./ProjectCards";
-//import Particle from "../Particle";
-//import cube from "../../Assets/Projects/cube.png";
-//import hospi from "../../Assets/Projects/hospi.png";
-//import minor from "../../Assets/Projects/minor.png";
 
 function Projects() {
   return (
     <Container fluid className="project-section">
-      <Particle />
       <Container>
         <h1 className="project-heading">
             <strong className="purple">MES PROJETS </strong>

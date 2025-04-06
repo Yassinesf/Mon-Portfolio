@@ -11,7 +11,7 @@ export default function Signup() {
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
-    setError(""); // reset erreur si l’utilisateur corrige
+    setError("");
   };
 
   const validatePassword = (password) => {

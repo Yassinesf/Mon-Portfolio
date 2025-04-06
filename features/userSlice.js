@@ -1,10 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  users: [
-    { username: "admin", password: "1234" },
-  ],
-  currentUser: null,
+  users: [], // tableau des utilisateurs enregistrés
+  currentUser: null, // utilisateur connecté
 };
 
 const userSlice = createSlice({
@@ -12,15 +10,23 @@ const userSlice = createSlice({
   initialState,
   reducers: {
     register: (state, action) => {
-      state.users.push(action.payload);
-      state.currentUser = action.payload;
+      const existing = state.users.find(
+        (u) => u.username === action.payload.username
+      );
+      if (!existing) {
+        state.users.push(action.payload);
+      }
     },
     login: (state, action) => {
       const { username, password } = action.payload;
       const user = state.users.find(
         (u) => u.username === username && u.password === password
       );
-      state.currentUser = user || null;
+      if (user) {
+        state.currentUser = user;
+      } else {
+        state.currentUser = null; // aucun utilisateur invalide ne passe
+      }
     },
     logout: (state) => {
       state.currentUser = null;

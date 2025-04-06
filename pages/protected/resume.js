@@ -1,4 +1,3 @@
-import Particle from "@/components/Particle";
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
@@ -8,7 +7,6 @@ function ResumeNew() {
   return (
     <div>
       <Container fluid className="resume-section">
-        <Particle />
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"
@@ -26,14 +24,14 @@ function ResumeNew() {
             <img
               src="/Photo1.png"
               alt="CV Page 1"
-              style={{ width: "100%", height: "auto", borderRadius: "10px", boxShadow: "0 4px 12px rgba(0,0,0,0.2)" }}
+              style={{ width: "100%", height: "auto", borderRadius: "10px"}}
             />
           </Col>
           <Col xs={12} md={6} lg={5}>
             <img
               src="/Photo2.png"
               alt="CV Page 2"
-              style={{ width: "100%", height: "auto", borderRadius: "10px", boxShadow: "0 4px 12px rgba(0,0,0,0.2)" }}
+              style={{ width: "100%", height: "auto", borderRadius: "10px"}}
             />
           </Col>
         </Row>

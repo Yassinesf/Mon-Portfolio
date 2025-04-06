@@ -40,11 +40,11 @@ export default function Login() {
   };
 
   useEffect(() => {
-    if (currentUser) {
+    if (currentUser && currentUser.username) {
       router.push("/protected/about");
     }
   }, [currentUser]);
-
+  
   return (
     <div className="auth-container">
       <h2 className="auth-title">Connexion</h2>

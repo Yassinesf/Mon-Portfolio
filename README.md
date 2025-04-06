@@ -6,46 +6,69 @@ Ce projet est un portfolio personnel développé avec Next.js. Il a été réali
 
 ---
 
-## Fonctionnalités principales
+## ## Fonctionnalités principales
 
-1. **Page d’accueil :**
-   - Affiche une photo de profil
-   - Présente une biographie claire et bien structurée
-   - Montre les compétences techniques et personnelles
+### 1. Page d’accueil
+- Affiche une photo de profil
+- Présente une biographie claire et structurée
+- Met en avant les compétences techniques et personnelles
 
-2. **Entête et pied de page :**
-   - Navigation fluide entre les pages
-   - Liens vers GitHub, LinkedIn et autres réseaux sociaux
+### 2. Entête et pied de page
+- Navigation fluide entre les différentes sections
+- Liens externes vers GitHub, LinkedIn, etc.
 
-3. **Pages Projets :**
-   - Deux projets minimum avec :
-     - Nom du projet
-     - Description détaillée
-     - Technologies utilisées (ex : React, Node.js, etc.)
+### 3. Page Projets
+- Présente au moins deux projets avec :
+  - Nom
+  - Description
+  - Technologies utilisées
 
-4. **Pages Authentification :**
-   - Page de login
-   - Page d’inscription
-   - Validées avec Redux
-   - Les formulaires affichent des erreurs en rouge
+### 4. Authentification
+- Page de connexion
+- Page d’inscription
+- Gestion via Redux
 
-5. **Pages Témoignages :**
-   - Liste de témoignages
-   - Possibilité d’ajouter ou modifier un témoignage
-   - Utilisation de Redux pour gérer les données
-   - Les nouveaux témoignages n'ont pas besoin d'une photo
+### 5. Témoignages
+- Liste des témoignages
+- Ajout et modification possibles
+- Données gérées avec Redux
+- La photo est optionnelle
 
-6. **Protection des routes :**
-   - Seules les pages `login` et `inscription` sont accessibles aux utilisateurs non connectés
-   - Les autres pages sont protégées et nécessitent une connexion
+### 6. Protection des routes
+- Seules les pages `login` et `signup` sont accessibles sans être connecté
+- Les autres pages sont sécurisées (about, project, resume, testimonials)
 
-7. **Responsive design :**
-   - Fonctionne correctement sur mobile, tablette et ordinateur
+### 7. Responsive Design
+- Le site fonctionne parfaitement sur mobile, tablette et ordinateur
 
-8. **Design moderne :**
-   - Utilisation de Google Fonts
-   - CSS personnalisé et animations
-   - Structure claire et bien espacée
+### 8. Design moderne
+- Google Fonts
+- Style CSS personnalisé (rouge/noir)
+- Animations légères et interface épurée
+
+
+## Installation
+
+```bash
+git clone https://github.com/Yassinesf/Mon-Portfolio.git
+cd Mon-Portfolio
+npm install
+npm run dev
+
+## Structure du projet
+
+Mon-Portfolio/
+├── components/         # Composants réutilisables (Navbar, Footer, etc.)
+├── features/           # Slices Redux (userSlice, testimonialSlice)
+├── pages/
+│   ├── login.js        # Page de connexion
+│   ├── signup.js       # Page d'inscription
+│   └── protected/      # Pages sécurisées (about, resume, project, etc.)
+├── public/             # Images, logos, etc.
+├── styles/             # Fichiers CSS globaux
+├── store.js            # Configuration Redux
+├── README.md
+└── package.json
 
 ---
 
@@ -58,60 +81,6 @@ Ce projet est un portfolio personnel développé avec Next.js. Il a été réali
 - CSS3
 - Google Fonts
 
----
-
-## Structure du projet
-
-```
-/pages
-  - index.js
-  - about.js
-  - projects.js
-  - login.js
-  - register.js
-  - testimonials.js
-
-/components
-  - Header.js
-  - Footer.js
-  - ProjectCard.js
-  - AboutCard.js
-  - Testimonial.js
-  - Modal.js
-
-/features
-  - authSlice.js
-  - testimonialSlice.js
-
-/styles
-  - global.css
-  - testimonial.css
-```
-
----
-
-## Installation et exécution
-
-1. Cloner le projet :
-
-```bash
-git clone https://github.com/Yassinesf/Mon-Portfolio.git
-cd Mon-Portfolio
-```
-
-2. Installer les dépendances :
-
-```bash
-npm install
-```
-
-3. Lancer le serveur de développement :
-
-```bash
-npm run dev
-```
-
----
 
 ## Auteur
 
