@@ -75,11 +75,63 @@ Mon-Portfolio/
 ## Technologies utilisées
 
 - Next.js
-- React
 - Redux Toolkit
 - React-Bootstrap
-- CSS3
 - Google Fonts
+
+
+## Structure du projet
+
+```
+/pages
+  - index.js
+  - about.js
+  - projects.js
+  - login.js
+  - register.js
+  - testimonials.js
+
+/components
+  - Header.js
+  - Footer.js
+  - ProjectCard.js
+  - AboutCard.js
+  - Testimonial.js
+  - Modal.js
+
+/features
+  - authSlice.js
+  - testimonialSlice.js
+
+/styles
+  - global.css
+  - testimonial.css
+```
+
+---
+
+## Installation et exécution
+
+1. Cloner le projet :
+
+```bash
+git clone https://github.com/Yassinesf/Mon-Portfolio.git
+cd Mon-Portfolio
+```
+
+2. Installer les dépendances :
+
+```bash
+npm install
+```
+
+3. Lancer le serveur de développement :
+
+```bash
+npm run dev
+```
+
+---
 
 
 ## Auteur
