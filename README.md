@@ -9,16 +9,16 @@ Ce projet est un portfolio personnel développé avec Next.js. Il a été réali
 ## ## Fonctionnalités principales
 
 ### 1. Page d’accueil
-- Affiche une photo de profil
-- Présente une biographie claire et structurée
-- Met en avant les compétences techniques et personnelles
+ Affiche une photo de profil
+ Présente une biographie claire et structurée
+Met en avant les compétences techniques et personnelles
 
 ### 2. Entête et pied de page
 - Navigation fluide entre les différentes sections
 - Liens externes vers GitHub, LinkedIn, etc.
 
 ### 3. Page Projets
-- Présente au moins deux projets avec :
+- Présente 3 projets avec :
   - Nom
   - Description
   - Technologies utilisées
@@ -35,7 +35,7 @@ Ce projet est un portfolio personnel développé avec Next.js. Il a été réali
 - La photo est optionnelle
 
 ### 6. Protection des routes
-- Seules les pages `login` et `signup` sont accessibles sans être connecté
+- Seules les pages login et signup sont accessibles sans être connecté
 - Les autres pages sont sécurisées (about, project, resume, testimonials)
 
 ### 7. Responsive Design
@@ -75,10 +75,8 @@ Mon-Portfolio/
 ## Technologies utilisées
 
 - Next.js
-- React
 - Redux Toolkit
 - React-Bootstrap
-- CSS3
 - Google Fonts
 
 
