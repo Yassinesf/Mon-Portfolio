@@ -2,50 +2,87 @@
 
 ## Description
 
-Ce projet est un portfolio personnel développé avec Next.js. Il a été réalisé dans le cadre du cours de conception de portfolio donné par Dr Bakary Diarra. L'objectif principal est de mettre en avant mes compétences en développement web, mon parcours, mes projets et permettre aux visiteurs de laisser des témoignages.
+Ce projet est un portfolio personnel développé avec Next.js. Il a été réalisé dans le cadre du cours de conception de portfolio donné par Dr Bakary Diarra. L'objectif principal est de présenter mes compétences, projets, et permettre aux visiteurs de laisser des témoignages.
 
 ---
 
-## ## Fonctionnalités principales
+## Fonctionnalités principales
 
 ### 1. Page d’accueil
-- Affiche une photo de profil
-- Présente une biographie claire et structurée
-- Met en avant les compétences techniques et personnelles
+- Affichage d’une photo de profil
+- Biographie claire et structurée
+- Compétences techniques et personnelles
 
 ### 2. Entête et pied de page
-- Navigation fluide entre les différentes sections
-- Liens externes vers GitHub, LinkedIn, etc.
+- Navigation fluide entre les pages
+- Liens vers GitHub et LinkedIn
 
 ### 3. Page Projets
-- Présente au moins deux projets avec :
-  - Nom
+- 2 projets minimum avec :
+  - Nom du projet
   - Description
   - Technologies utilisées
 
-### 4. Authentification
-- Page de connexion
-- Page d’inscription
-- Gestion via Redux
+### 4. Pages Authentification
+- Connexion et inscription
+- Formulaires gérés avec Redux
+- Affichage des erreurs de formulaire (en rouge)
 
-### 5. Témoignages
-- Liste des témoignages
-- Ajout et modification possibles
-- Données gérées avec Redux
-- La photo est optionnelle
+### 5. Pages Témoignages
+- Affichage des témoignages
+- Ajout et modification (sans photo requise)
+- Succès affiché en vert, erreurs en rouge
 
 ### 6. Protection des routes
-- Seules les pages `login` et `signup` sont accessibles sans être connecté
-- Les autres pages sont sécurisées (about, project, resume, testimonials)
+- Seules `login` et `signup` accessibles sans connexion
+- Les autres pages sont protégées par Redux
 
 ### 7. Responsive Design
-- Le site fonctionne parfaitement sur mobile, tablette et ordinateur
+- Adapté à tous les écrans (mobile, tablette, desktop)
 
 ### 8. Design moderne
 - Google Fonts
-- Style CSS personnalisé (rouge/noir)
-- Animations légères et interface épurée
+- Thème rouge/noir avec CSS personnalisé
+- Animations fluides
 
+---
+
+## Aperçu du Portfolio (Captures d’écran)
+
+#### Page de connexion
+![Connexion](./Captures%20d%27ecran/Connexion.png)
+
+#### Page d’inscription
+![Inscription](./Captures%20d%27ecran/inscription.png)
+
+#### Page d’accueil
+![Accueil](./Captures%20d%27ecran/p1.png)
+
+#### Section Projets
+![Projets](./Captures%20d%27ecran/p2.png)
+
+#### Page À propos
+![A propos](./Captures%20d%27ecran/p3.png)
+
+#### Témoignages
+![Témoignages](./Captures%20d%27ecran/p4.png)
+
+#### Pages Témoignages
+![Succès](./Captures%20d%27ecran/p5.png)
+
+#### formulaire d'ajout
+![Erreur](./Captures%20d%27ecran/p6.png)
+
+#### témoignage ajouté
+![Ajout](./Captures%20d%27ecran/p7.png)
+
+#### Liste des témoignages
+![Liste](./Captures%20d%27ecran/p8.png)
+
+#### Modification témoignage
+![Modifier](./Captures%20d%27ecran/p9.png)
+
+---
 
 ## Installation
 
@@ -54,88 +91,39 @@ git clone https://github.com/Yassinesf/Mon-Portfolio.git
 cd Mon-Portfolio
 npm install
 npm run dev
+```
+
+---
 
 ## Structure du projet
 
+```
 Mon-Portfolio/
 ├── components/         # Composants réutilisables (Navbar, Footer, etc.)
 ├── features/           # Slices Redux (userSlice, testimonialSlice)
 ├── pages/
-│   ├── login.js        # Page de connexion
-│   ├── signup.js       # Page d'inscription
-│   └── protected/      # Pages sécurisées (about, resume, project, etc.)
-├── public/             # Images, logos, etc.
-├── styles/             # Fichiers CSS globaux
-├── store.js            # Configuration Redux
+│   ├── login.js        # Connexion
+│   ├── signup.js       # Inscription
+│   └── protected/      # Pages protégées (about, resume, project, etc.)
+├── public/
+│   └── Captures d'ecran/  # Captures d'écran
+├── styles/             # Fichiers CSS (global.css, temoignage.css)
+├── store.js            # Store Redux
 ├── README.md
 └── package.json
+```
 
 ---
 
 ## Technologies utilisées
-
 - Next.js
 - Redux Toolkit
 - React-Bootstrap
 - Google Fonts
 
-
-## Structure du projet
-
-```
-/pages
-  - index.js
-  - about.js
-  - projects.js
-  - login.js
-  - register.js
-  - testimonials.js
-
-/components
-  - Header.js
-  - Footer.js
-  - ProjectCard.js
-  - AboutCard.js
-  - Testimonial.js
-  - Modal.js
-
-/features
-  - authSlice.js
-  - testimonialSlice.js
-
-/styles
-  - global.css
-  - testimonial.css
-```
-
 ---
-
-## Installation et exécution
-
-1. Cloner le projet :
-
-```bash
-git clone https://github.com/Yassinesf/Mon-Portfolio.git
-cd Mon-Portfolio
-```
-
-2. Installer les dépendances :
-
-```bash
-npm install
-```
-
-3. Lancer le serveur de développement :
-
-```bash
-npm run dev
-```
-
----
-
 
 ## Auteur
-
 - Nom : **Yassine Sfaira**
 - Étudiant au Collège La Cité
 - Programme : Programmation informatique
