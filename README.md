@@ -18,8 +18,8 @@ Ce projet est un portfolio personnel développé avec Next.js. Il a été réali
 - Liens vers GitHub et LinkedIn
 
 ### 3. Page Projets
-- 2 projets minimum avec :
-  - Nom du projet
+- Présente 3 projets avec :
+  - Nom
   - Description
   - Technologies utilisées
 
@@ -34,8 +34,8 @@ Ce projet est un portfolio personnel développé avec Next.js. Il a été réali
 - Succès affiché en vert, erreurs en rouge
 
 ### 6. Protection des routes
-- Seules `login` et `signup` accessibles sans connexion
-- Les autres pages sont protégées par Redux
+- Seules les pages login et signup sont accessibles sans être connecté
+- Les autres pages sont sécurisées
 
 ### 7. Responsive Design
 - Adapté à tous les écrans (mobile, tablette, desktop)
