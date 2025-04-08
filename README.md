@@ -9,17 +9,28 @@ Ce projet est un portfolio personnel développé avec Next.js. Il a été réali
 ## Fonctionnalités principales
 
 ### 1. Page d’accueil
+<<<<<<< HEAD
 - Affichage d’une photo de profil
 - Biographie claire et structurée
 - Compétences techniques et personnelles
+=======
+ Affiche une photo de profil
+ Présente une biographie claire et structurée
+Met en avant les compétences techniques et personnelles
+>>>>>>> 383b0e43e272ec0f972993a1216e6739c1cd4793
 
 ### 2. Entête et pied de page
 - Navigation fluide entre les pages
 - Liens vers GitHub et LinkedIn
 
 ### 3. Page Projets
+<<<<<<< HEAD
 - 2 projets minimum avec :
   - Nom du projet
+=======
+- Présente 3 projets avec :
+  - Nom
+>>>>>>> 383b0e43e272ec0f972993a1216e6739c1cd4793
   - Description
   - Technologies utilisées
 
@@ -34,8 +45,13 @@ Ce projet est un portfolio personnel développé avec Next.js. Il a été réali
 - Succès affiché en vert, erreurs en rouge
 
 ### 6. Protection des routes
+<<<<<<< HEAD
 - Seules `login` et `signup` accessibles sans connexion
 - Les autres pages sont protégées par Redux
+=======
+- Seules les pages login et signup sont accessibles sans être connecté
+- Les autres pages sont sécurisées (about, project, resume, testimonials)
+>>>>>>> 383b0e43e272ec0f972993a1216e6739c1cd4793
 
 ### 7. Responsive Design
 - Adapté à tous les écrans (mobile, tablette, desktop)
@@ -121,7 +137,10 @@ Mon-Portfolio/
 - React-Bootstrap
 - Google Fonts
 
+<<<<<<< HEAD
 ---
+=======
+>>>>>>> 383b0e43e272ec0f972993a1216e6739c1cd4793
 
 ## Auteur
 - Nom : **Yassine Sfaira**
