@@ -50,37 +50,37 @@ Ce projet est un portfolio personnel développé avec Next.js. Il a été réali
 ## Aperçu du Portfolio (Captures d’écran)
 
 #### Page de connexion
-![Connexion](./Captures%20d%27ecran/Connexion.png)
+![Connexion](./public/Captures%20d%27ecran/Connexion.png)
 
 #### Page d’inscription
-![Inscription](./Captures%20d%27ecran/inscription.png)
+![Inscription](./public/Captures%20d%27ecran/inscription.png)
 
 #### Page d’accueil
-![Accueil](./Captures%20d%27ecran/p1.png)
+![Accueil](./public/Captures%20d%27ecran/p1.png)
 
 #### Section Projets
-![Projets](./Captures%20d%27ecran/p2.png)
+![Projets](./public/Captures%20d%27ecran/p2.png)
 
 #### Page À propos
-![A propos](./Captures%20d%27ecran/p3.png)
+![A propos](./public/Captures%20d%27ecran/p3.png)
 
 #### Témoignages
-![Témoignages](./Captures%20d%27ecran/p4.png)
+![Témoignages](./public/Captures%20d%27ecran/p4.png)
 
 #### Pages Témoignages
-![Succès](./Captures%20d%27ecran/p5.png)
+![Succès](./public/Captures%20d%27ecran/p5.png)
 
 #### formulaire d'ajout
-![Erreur](./Captures%20d%27ecran/p6.png)
+![Erreur](./public/Captures%20d%27ecran/p6.png)
 
 #### témoignage ajouté
-![Ajout](./Captures%20d%27ecran/p7.png)
+![Ajout](./public/Captures%20d%27ecran/p7.png)
 
 #### Liste des témoignages
-![Liste](./Captures%20d%27ecran/p8.png)
+![Liste](./public/Captures%20d%27ecran/p8.png)
 
 #### Modification témoignage
-![Modifier](./Captures%20d%27ecran/p9.png)
+![Modifier](./public/Captures%20d%27ecran/p9.png)
 
 ---
 
