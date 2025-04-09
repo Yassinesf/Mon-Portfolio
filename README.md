@@ -61,22 +61,22 @@ Ce projet est un portfolio personnel développé avec Next.js. Il a été réali
 #### Section Projets
 ![Projets](./public/Captures%20d%27ecran/p2.png)
 
-#### Page À propos
+#### Page Mes Projets
 ![A propos](./public/Captures%20d%27ecran/p3.png)
 
-#### Témoignages
+#### Mon CV
 ![Témoignages](./public/Captures%20d%27ecran/p4.png)
 
-#### Pages Témoignages
+#### Pages Listes des Témoignages
 ![Succès](./public/Captures%20d%27ecran/p5.png)
 
 #### formulaire d'ajout
 ![Erreur](./public/Captures%20d%27ecran/p6.png)
 
-#### témoignage ajouté
+#### Listes des temoignages ajoutés
 ![Ajout](./public/Captures%20d%27ecran/p7.png)
 
-#### Liste des témoignages
+#### Témoignage ajouté
 ![Liste](./public/Captures%20d%27ecran/p8.png)
 
 #### Modification témoignage
